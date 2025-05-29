@@ -1,0 +1,242 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rajdhani', system-ui;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+  height: 100vh;
+  /* width: 100%; */
+  background: 
+    linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.0) 20%),
+    linear-gradient(90deg, #000000 10%, #b42949 45%, #423b8d 50%, #000000);
+  background-repeat: no-repeat;
+  background-size: 100% 100%, 100%;
+  background-position: top bottom;
+
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: "Rajdhani", system-ui;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 2px;
+  /* background-color: antiquewhite; */
+}
+
+.logo {
+  /* font-size: 18px;
+  font-weight: bold; */
+  /* background-color: blueviolet; */
+  height: 30px;
+  /* width: 50px; */
+}
+
+.logo img {
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 6rem;
+  font-size: 15px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  flex-wrap: wrap;
+  /* gap: 30px; */
+  height: 100%;
+  width: 100%;
+  /* background-color: aliceblue; */
+  /* overflow: hidden; */
+}
+
+.left-panel {
+  flex: 1;
+  /* max-width: 200px; */
+  width: 20%;
+  height: 100%;
+  /* background-color: aqua; */
+}
+
+/* .trailer-card {
+  transform: translate(7%, 75%);
+  width: 75%;
+  height: fit-content;
+  border-radius: 10px;
+  overflow: hidden;
+  background: blueviolet;
+}
+
+.trailer-card video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: azure;
+}
+
+.trailer-card::after {
+  content: 'NEW TRAILER';
+  z-index: 10;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: pink;
+} */
+
+/* .trailer-label {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+} */
+
+.trailer-card {
+  position: relative;
+  transform: translate(10%, 75%);
+  width: 75%;
+  /* height: fit-content; */
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  /* box-shadow: 0 0 12px #aa00ff88; */
+}
+
+.trailer-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.overlay {
+  /* display: ; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.6));
+  transition: background 0.3s ease;
+}
+
+.play-button {
+  font-size: 36px;
+  color: white;
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  /* border-radius: 65%; */
+  cursor: pointer;
+  transition: color 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.play-button:hover {
+  /* background: rgba(255, 0, 90, 1); */
+  color: #929191;
+}
+
+.play-button.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* .trailer-label {
+  display: inline;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  /* font-family: "Rajdhani", system-ui;
+  /* font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+} */
+
+.center-panel {
+  flex: 1;
+  text-align: center;
+  height: 80%;
+  width: 60%;
+  /* background-color:beige; */
+}
+
+/* .miles-img {
+    background-color: red;
+  height: 50%;
+  object-fit: contain;
+} */
+
+.miles-img img {
+    /* border: red solid 5px; */
+    height: 110vh;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%);
+    margin: auto;
+}
+
+.right-panel {
+  flex: 1;
+  /* max-width: 400px; */
+  width: 20%;
+  /* background: pink; */
+}
+
+.title img {
+  width: 100%;
+}
+
+.description {
+  position: relative;
+  width: 55%;
+  font-size: 14px;
+  margin: auto;
+  color: #ccc;
+}
+
+.description::before {
+  content: "\"";
+  position: absolute;
+  transform: translate(-140%, -30%);
+  font-size: 36px;
+}
+
+.description::after {
+  content: "\"";
+  position: absolute;
+  transform: translate(95%, -15%);
+  font-size: 38px;
+}

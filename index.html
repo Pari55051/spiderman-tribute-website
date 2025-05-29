@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spider-Man: Across the Spider-Verse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./assets/images/marvel-logo.png" alt="Marvel logo">
+      </div>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>Characters</li>
+        <li>Songs</li>
+        <li>Snippets</li>
+      </ul>
+      <div class="logo">
+        <img src="./assets/images/sony-logo.png" alt="Sony logo">
+      </div>
+    </nav>
+
+    <section class="main-content">
+      <div class="left-panel">
+        <!-- <div class="trailer-card">
+          <video width="320" height="240" controls>
+              <source src="./assets/videos/trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+          <span class="trailer-label">NEW TRAILER</span>
+        </div> -->
+        <div class="trailer-card">
+          <video id="trailerVideo" src="./assets/videos/trailer.mp4" poster="./assets/images/trailer-poster.jpg" muted></video>
+          <div class="overlay" id="overlay">
+            <button class="play-button" onclick="toggleVideo()">&#9658;</button>
+            <!-- <span class="trailer-label">NEW TRAILER</span> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="center-panel">
+        <div class="miles-img">
+          <img src="./assets/images/miles-morales-portrait.png" alt="Miles Morales Portrait" />
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div class="title">
+          <img src="./assets/images/movie-logo.png" alt="Movie logo">
+        </div>
+        <p class="description">
+          Miles Morales catapults across the multiverse, where he encounters a team of Spider-people charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero.
+        </p>
+      </div>
+    </section>
+  </div>
+
+
+  <script>
+  function toggleVideo() {
+    const video = document.getElementById('trailerVideo');
+    // const overlay = document.getElementById('overlay')
+    const playButton = document.querySelector('.play-button');
+
+    if (video.paused) {
+      video.play();
+      playButton.style.opacity = "0";
+    } else {
+      video.pause();
+      playButton.style.opacity = "1";
+    }
+  }
+</script>
+
+</body>
+</html>
