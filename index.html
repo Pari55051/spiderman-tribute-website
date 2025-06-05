@@ -7,24 +7,25 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!--------------------------- NAVBAR + HOME PAGE ------------------------ -->
-  <div class="container" id="home">
-    <nav class="navbar">
-      <div class="logo">
-        <img src="./assets/images/marvel-logo.png" alt="Marvel logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#characters">Characters</a></li>
-        <li><a href="#">Songs</a></li>
-        <li><a href="#">Snippets</a></li>
-      </ul>
-      <div class="logo">
-        <img src="./assets/images/sony-logo.png" alt="Sony logo">
-      </div>
-    </nav>
+  <!--------------------------- NAVBAR -------------------------->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./assets/images/marvel-logo.png" alt="Marvel logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#characters">Characters</a></li>
+      <li><a href="#">Songs</a></li>
+      <li><a href="#">Snippets</a></li>
+    </ul>
+    <div class="logo">
+      <img src="./assets/images/sony-logo.png" alt="Sony logo">
+    </div>
+  </nav>
 
-    <section class="main-content">
+  <!-------------------- HOME SECTION ---------------------->
+  <section class="container" id="home">
+    <div class="main-content">
       <div class="left-panel">
         <!-- <div class="trailer-card">
           <video width="320" height="240" controls>
@@ -56,17 +57,17 @@
           Miles Morales catapults across the multiverse, where he encounters a team of Spider-people charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero.
         </p>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <!---------- divider ---------->
   <div class="divider"></div>
 
-  <!-- CHARACTERS SECTION -->
-  <div class="characters" id="characters">
+  <!-------------------- CHARACTERS SECTION ---------------------->
+  <section class="characters" id="characters">
     <h1>Characters</h1>
 
-    <section class="character-cards">
+    <div class="character-cards">
       <!-- miles morales -->
       <div class="card">
         <div class="wrapper">
@@ -136,10 +137,38 @@
         <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
         <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
       </div> -->
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <script>
+  <!---------- divider ---------->
+  <div class="divider"></div>
+
+  <!--------------------- SONGS SECTION ----------------------------->
+  <section class="songs" id="songs">
+    <h1>Songs</h1>
+
+    <div class="songs-embed">
+      <iframe 
+      src="https://open.spotify.com/embed/album/6nlUFeFAPjaDTA7A0VVwnO?utm_source=generator&theme=0" 
+      width="100%" 
+      height="352" 
+      frameBorder="0" 
+      allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!---------- divider ---------->
+  <div class="divider"></div>
+
+  <!--------------------- FOOTER ----------------------------->
+  <footer>
+    <span class="project-desc">A tribute website to the movie "Spider-Man: Across the Spider-Verse" by MARVEL and SONY</span>
+    <span class="copyright">© <a href="http://github.com/pari5501">Parimoksha</a> | Built in June 2025</span>
+  </footer>
+
+<script>
   function toggleVideo() {
     const video = document.getElementById('trailerVideo');
     // const overlay = document.getElementById('overlay')
