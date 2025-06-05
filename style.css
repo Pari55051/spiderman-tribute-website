@@ -47,6 +47,9 @@ body {
   font-weight: 500;
   letter-spacing: 2px;
   /* background-color: antiquewhite; */
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .logo {
@@ -66,6 +69,12 @@ body {
   list-style: none;
   gap: 6rem;
   font-size: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .main-content {
@@ -259,6 +268,14 @@ body {
   background: linear-gradient(transparent 0%, #000);
 }
 
+h1 {
+  text-align: center;
+  font-family: "Bangers", system-ui;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
 /* ========== section 2 ============ */
 /* .text::before {
   content: '';
@@ -270,13 +287,6 @@ body {
   background: linear-gradient(transparent 0%, #000);
   /* background-color: aqua;
 } */
-
-.characters h1 {
-  text-align: center;
-  font-family: "Bangers", system-ui;
-  letter-spacing: 5px;
-  margin-bottom: 8rem;
-}
 
 .character-cards {
   width: 90%;
@@ -333,6 +343,7 @@ body {
   transition: all 0.5s;
   position: absolute;
   left: 0;
+  
 }
 .wrapper::before {
   top: 0;
@@ -358,6 +369,7 @@ body {
 .card:hover .wrapper::before,
 .wrapper::after {
   opacity: 1;
+  /* background: rgba(0, 0, 0, 0.4); */
 }
 
 .card:hover .wrapper::after {
@@ -367,19 +379,30 @@ body {
   width: 100%;
   transition: transform 0.5s;
 }
-.card:nth-of-type(2) .title{
+.card:nth-of-type(2) .title,
+.card:nth-of-type(4) .title{
   width: 130%;
 }
+.card:nth-of-type(5) .title{
+  width: 120%;
+  margin-bottom: 20px;
+}
+
 .card:hover .title {
   transform: translate3d(0%, -50px, 100px);
 }
 
 .character {
-  width: 105%;
+  width: 110%;
   opacity: 0;
   transition: all 0.5s;
   position: absolute;
   z-index: -1;
+}
+.card:nth-of-type(4) .character,
+.card:nth-of-type(5) .character,
+.card:nth-of-type(6) .character {
+  width: 125%;
 }
 
 .card:hover .character {
