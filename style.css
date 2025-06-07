@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
-:root {
-  --card-height: 380px;
-  --card-width: calc(var(--card-height) / 1.5);
-}
-
+/* =============================================
+                    GENERAL 
+================================================ */
 html {
   scroll-behavior: smooth;
 }
@@ -27,27 +25,35 @@ body {
   background: #000;
 }
 
-.container {
-  max-width: 100%;
-  min-height: 100vh;
-  margin: auto;
-  padding: 20px;
-   background: 
-    linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.0) 20%),
-    linear-gradient(90deg, #000000 10%, #b42949 45%, #423b8d 50%, #000000);
-  background-repeat: no-repeat;
-  background-size: 100% 100%, 100%;
-  background-position: top bottom;
+/* ========== divider ============ */
+.divider {
+  content: '';
+  display: block;
+  position: relative;
+  top: -50px;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(transparent 0%, #000);
 }
 
+h1 {
+  text-align: center;
+  font-family: "Bangers", system-ui;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+/* =============================================
+                    NAVBAR 
+================================================ */
 .navbar {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding: 0 2rem;
+  padding: 15px 2rem 10px;
   font-family: "Rajdhani", system-ui;
   font-style: normal;
   font-weight: 500;
@@ -76,9 +82,25 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+
+/* =============================================
+                    HOME
+================================================ */
+.container {
+  max-width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  padding: 20px;
+   background: 
+    linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.0) 20%),
+    linear-gradient(90deg, #000000 10%, #b42949 45%, #423b8d 50%, #000000);
+  background-repeat: no-repeat;
+  background-size: 100% 100%, 100%;
+  background-position: top bottom;
 }
 
 .main-content {
@@ -89,6 +111,7 @@ a {
   width: 100%;
 }
 
+/* -------- left panel ---------- */
 .left-panel {
   flex: 1;
   /* max-width: 200px; */
@@ -146,6 +169,7 @@ a {
   pointer-events: none;
 }
 
+/* ------------ center panel ----------- */
 .center-panel {
   flex: 1;
   text-align: center;
@@ -160,6 +184,7 @@ a {
     transform: translate(-50%);
 }
 
+/* ------------- right panel ---------- */
 .right-panel {
   flex: 1;
   /* max-width: 400px; */
@@ -192,27 +217,10 @@ a {
   font-size: 38px;
 }
 
-/* ========== divider ============ */
-.divider {
-  content: '';
-  display: block;
-  position: relative;
-  top: -50px;
-  width: 100%;
-  height: 50px;
-  background: linear-gradient(transparent 0%, #000);
-}
 
-h1 {
-  text-align: center;
-  font-family: "Bangers", system-ui;
-  letter-spacing: 5px;
-  font-size: 3rem;
-  margin-bottom: 3rem;
-}
-
-/* ========== CHARACTERS SECTION ============ */
-
+/* =============================================
+                CHARACTERS SECTION
+================================================ */
 .character-cards {
   width: 90%;
   margin: 0 auto;
@@ -331,7 +339,9 @@ h1 {
 }
 
 
-/* ====================== SONGS SECTIONS =================*/
+/* =============================================
+                SONGS SECTION 
+================================================ */
 .songs {
   margin: 2rem;
 }
@@ -348,8 +358,9 @@ h1 {
 }
 
 
-
-/* ====================== SNIPPETS SECTIONS =================*/
+/* =============================================
+                SNIPPETS SECTION 
+================================================ */
 .snippets-container {
   width: 80%;
   /* max-width: 124rem; */
@@ -357,16 +368,13 @@ h1 {
   margin: 0 auto;
 }
 
-/* #snippets {
-  padding: 4rem 0;
-} */
-
 #snippets .img-slider {
   height: 30rem;
   padding: 0.5rem 0;
   position: relative;
 }
 
+/* ---- slide styles ------ */
 .img-slide {
   width: 20rem;
   height: 25rem;
@@ -383,13 +391,8 @@ h1 {
 .img-slide .img-slide-content {
   position: absolute;
   left: 0;
-  /* top: 0; */
   right: 0;
   bottom: 0;
-  /* height: 4rem; */
-  /* height: fit-content; */
-  /* width: 20rem; */
-  /* background-color: rgba(0, 0, 0, 0.6); */
 }
 
 .img-slide-content .img-slide-content-bottom {
@@ -415,6 +418,7 @@ h1 {
   display: none;
 }
 
+/* ------- slider controls styles ---------- */
 .img-slider-control {
   position: relative;
   bottom: 2rem;
@@ -429,10 +433,6 @@ h1 {
 }
 
 .img-slider-control .slider-arrow {
-  /* background: #fff; */
-  /* cursor: pointer; */
-  /* z-index: 5; */
-  /* color: white; */
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -444,7 +444,6 @@ h1 {
 
 .img-slider-control .slider-arrow ion-icon {
   font-size: 2rem;
-  /* color: #cacaca; */
   color: #4b81ec;
 }
 
@@ -454,7 +453,6 @@ h1 {
 
 .img-slider-control .swiper-pagination {
   position: relative;
-  /* width: 15rem; */
   width: auto;
   bottom: 1rem;
 }
@@ -465,13 +463,13 @@ h1 {
 }
 
 .img-slider-control .swiper-pagination .swiper-pagination-bullet-active {
-  /* background: #4b81ec; */
   background: #b42949;
 }
 
 
-
-/* ====================== FOOTER =================*/
+/* =============================================
+                    FOOTER 
+================================================ */
 footer {
   width: 100%;
   display: flex;
