@@ -1,0 +1,328 @@
+<section class="snippets" id="snippets">
+    <h1>Snippets</h1>
+
+    <div class="slider-container">
+      <div class="swiper img-slider">
+
+        <div class="swiper-wrapper">
+          <!-- image 1 -->
+          <div class="swiper-slide img-slide">
+
+            <div class="img-slide-img">
+              <img src="./assets/images/snippets/1.jpeg" alt="Snippet 1">
+            </div>
+
+          </div>
+
+          <!-- image 2 -->
+          <div class="swiper-slide img-slide">
+
+            <div class="img-slide-img">
+              <img src="./assets/images/snippets/2.jpeg" alt="Snippet 1">
+            </div>
+          </div>
+
+          <!-- image 3 -->
+          <div class="swiper-slide img-slide">
+
+            <div class="img-slide-img">
+              <img src="./assets/images/snippets/3.png" alt="Snippet 1">
+            </div>
+
+          </div>
+
+          <!-- image 1 -->
+          <div class="swiper-slide img-slide">
+
+            <div class="img-slide-img">
+              <img src="./assets/images/snippets/1.jpeg" alt="Snippet 1">
+            </div>
+          </div>
+
+          <!-- image 2 -->
+          <div class="swiper-slide img-slide">
+
+            <div class="img-slide-img">
+              <img src="./assets/images/snippets/2.jpeg" alt="Snippet 1">
+            </div>
+          </div>
+
+          <!-- image 3 -->
+          <div class="swiper-slide img-slide">
+
+            <div class="img-slide-img">
+              <img src="./assets/images/snippets/3.png" alt="Snippet 1">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <!-- <div class="img-slider-control">
+          <div class="slider-arrow swiper-btn-prev">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </div>
+          <div class="slider-arrow swiper-btn-next">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+        </div> -->
+          
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+-----------------------comments of css----------------------------
+.slider-container {
+  width: 80%;
+  /* padding: 0 1rem; */
+  margin: 0 auto;
+}
+
+/* .snippets {
+  padding: 2rem 0;
+} */
+
+.img-slider {
+  height: 30rem;
+  /* padding: 2rem 0; */
+  position: relative;
+  overflow: visible;
+}
+
+.img-slide {
+  width: 20rem;
+  height: 25rem;
+  position: relative;
+}
+
+.img-slide .img-slide-img img {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.img-slide .img-slide-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+/* .img-slider-control {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+} */
+/* .img-slider-control {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+} */
+
+/* .img-slider-control {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+  z-index: 10;
+}
+ 
+
+.img-slider-control .swiper-btn-next {
+  position: relative;
+  left: 58%;
+  transform: translate(-58%);
+} */
+
+/* .img-slider-control .slider-arrow {
+  background: #af0c0c;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 45%;
+  position: relative;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+} */
+/* .slider-arrow {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 24px;
+  color: white;
+}
+.slider-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+} */
+
+.img-slider-control .slider-arrow ion-icon {
+  font-size: 0.75rem;
+  color: #222224;
+}
+
+/* .img-slider-control .swiper-pagination {
+  position: relative;
+  bottom: 1rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem; 
+  margin: 0 auto;
+} */
+/* .swiper-pagination {
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+} */
+/* .swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+} */
+
+/* .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.img-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: #4b81ec;
+  opacity: 1;
+} */
+/* .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red;
+  opacity: 1;
+} */
+
+
+/* ------------------------ */
+/* .swiper-pagination {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: flex !important;
+  gap: 10px !important;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #af0c0c;
+  opacity: 1;
+}
+ */
+
+
+/* Container holding arrows */
+.img-slider-control {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  transform: translateY(-50%);
+  z-index: 20;
+  pointer-events: none; /* allow clicks to go through */
+}
+
+/* Style individual arrows */
+/* .slider-arrow {
+  pointer-events: all; 
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-arrow:hover {
+  background-color: white;
+} */
+
+/* Fix pagination */
+.swiper-pagination {
+  bottom: 10px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  text-align: center !important;
+  position: absolute !important;
+  z-index: 20;
+  /* background-color: aliceblue; */
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  /* color: white; */
+  opacity: 0.9;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red;
+  opacity: 1;
+}
